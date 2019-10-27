@@ -11,43 +11,38 @@ export class AppComponent {
   highchartsLine = Highcharts;
   chartOptionsLine = {
     chart: {
-      type: "spline"
+      backgroundColor: '#d2cf94',
+      type: 'spline'
     },
     title: {
-      text: "Monthly Average Temperature"
-    },
-    subtitle: {
-      text: "Source: WorldClimate.com"
+      text: 'Feedback in Line Chart'
     },
     xAxis: {
-      categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+      categories: ['1st Week', '2nd Week', '3rd Week', '4th Week', '5th Week']
     },
     yAxis: {
       title: {
-        text: "Temperature °C"
+        text: 'Ratings'
       }
     },
-    tooltip: {
-      valueSuffix: " °C"
-    },
     series: [{
-      name: 'Tokyo',
-      data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+      name: 'Positive',
+      data: [30,  33, 70, 49, 40]
     },
       {
-        name: 'New York',
-        data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+        name: 'Negative',
+        data:[ 40, 60, 20, 31, 25]
       },
       {
-        name: 'London',
-        data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+        name: 'Nuetral',
+        data: [ 30, 7, 10, 20, 35]
       }]
   };
 
   highchartsPie = Highcharts;
   chartOptions1 = {
     chart: {
+      backgroundColor: '#d2cf94',
       plotBorderWidth: null,
       plotShadow: false
     },
@@ -74,9 +69,9 @@ export class AppComponent {
       name: 'Feedback',
       data: [
 
-        ['Positive', 8.5],
-        ['Nuteral', 6.2],
-        ['Negative', 0.7]
+        ['Positive', 74],
+        ['Nuteral', 18],
+        ['Negative', 8]
       ]
     }]
 

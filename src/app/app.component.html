@@ -1,4 +1,5 @@
 
+
 <style>
 
 
@@ -25,32 +26,39 @@
     opacity: 0.8;
   }
 
+  .col-sm-6 {
+    background-color: #1976d2;
+  }
+  }
+
 </style>
 
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-  <span>Welcome To Feedback App</span>
+
+  <span>  FEEDBACK PAGE</span>
 
 </div>
 
 <div class="row">
+
   <div class="col-sm-6">
       <highcharts-chart
       [Highcharts] = "highchartsLine"
       [options] = "chartOptionsLine"
-      style = "width: 100%; height: 400px; display: block;">
+      style = "width: 100%; height: 580px; display: block;">
     </highcharts-chart>
   </div>
   <div class="col-sm-6">
     <highcharts-chart
       [Highcharts] = "highchartsPie"
       [options] = "chartOptions1"
-      style = "width: 100%; height: 400px; display: block;">
+      style = "width: 100%; height: 580px; display: block;">
     </highcharts-chart>
   </div>
   </div>
 
 
 
-
 <router-outlet></router-outlet>
+
